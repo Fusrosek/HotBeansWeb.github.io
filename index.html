@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hot Beans Web</title>
+<link rel="stylesheet" href="index.css" />
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+ 
+    #thank-you-message {
+      display: none;
+      text-align: center;
+      padding: 100px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+ 
+    .about-content,
+    .qualification-content,
+    .value-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      padding: 20px;
+    }
+ 
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+ 
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+    }
+ 
+    .card img {
+      max-width: 100%;
+    }
+ 
+    .qualification-content img,
+    .value-content img,
+    .about-content img {
+      max-width: 100%;
+      height: auto;
+    }
+ 
+    .qualification-content ul {
+      text-align: left;
+    }
+ 
+    .course-table {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+ 
+    .course-table img {
+      width: 300px;
+      height: auto;
+    }
+ 
+    .course-table div {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+ 
+    .apply-form form {
+      text-align: center;
+    }
+ 
+    .apply-form input {
+      display: block;
+      margin: 10px auto;
+    }
+</style>
+</head>
+<body>
+<div id="main-content">
+<header>
+<div class="logo">
+<img src="Layer 0.png" alt="Hot Beans Web Logo" style="height: 40px; vertical-align: middle;">
+        Hot Beans Web
+</div>
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#team">Team</a></li>
+<li><a href="#quality">Quality</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#apply">Apply</a></li>
+</ul>
+</nav>
+</header>
+ 
+    <section class="hero" id="home">
+<h1>Hot Beans Web</h1>
+<p>We're Hot Beans Web, a UK-based digital agency creating smart, user-focused web experiences.</p>
+<button onclick="document.getElementById('apply').scrollIntoView({ behavior: 'smooth' })">Apply now</button>
+</section>
+ 
+    <section class="about">
+<h2>About Us</h2>
+<div class="about-content">
+<img src="aboutus.png" alt="Team working">
+<p>
+          Hot Beans Web – Where Innovation Brews. We're a UK-based digital agency creating smart, user-focused web experiences. We're on the lookout for talented web developers to join our dynamic and fast-growing team.
+<br><br>
+          We value creativity, collaboration, and commitment. At Hot Beans Web, you’ll work on exciting projects, grow your skills, and be part of a supportive team that loves to build great things together. If you’re passionate about code, curious about new tech, and ready to make a difference, we’d love to hear from you.
+</p>
+</div>
+</section>
+ 
+    <section class="trainees" id="team">
+<h2>Trainees</h2>
+<div class="cards">
+<div class="card">
+<img src="trainee1.png" alt="Josef">
+<h3>Josef Brahovic</h3>
+<p>Front-end developer</p>
+</div>
+<div class="card">
+<img src="trainee2.png" alt="Anne">
+<h3>Anne Sparsky</h3>
+<p>UX/UI designer</p>
+</div>
+<div class="card">
+<img src="trainee3.png" alt="Michelle">
+<h3>Michelle Lang</h3>
+<p>Full stack developer</p>
+</div>
+</div>
+</section>
+ 
+    <section class="values" id="quality">
+<h2>What we want</h2>
+<div class="value-content">
+<p>We want our employees to be innovative, solving problems without breaking a sweat and having fun while doing it.</p>
+<img src="whatwewant.png" alt="Teamwork">
+</div>
+</section>
+ 
+    <section class="qualifications">
+<h2>Qualifications</h2>
+<div class="qualification-content">
+<img src="qualifications.png" alt="Meeting" style="width: 250px;">
+<div>
+<p>To work with us, you will need a strong foundation in IT and digital technologies.</p>
+<p><strong>The Minimum Qualification:</strong></p>
+<p>5 GCSE (English, Maths, IT needed)</p>
+<p><strong>Extra Qualification:</strong></p>
+<ul>
+<li>A-Level in Computer Science, Graphic Design, or IT</li>
+<li>Level 3 Diploma in Web Development or Software Engineering</li>
+<li>Level 3 Extended Diploma in Information Technology</li>
+<li>Level 4 Certificate in Web Design and Development</li>
+</ul>
+</div>
+</div>
+</section>
+ 
+    <section class="courses" id="courses">
+<h2>Courses that can help you learn programming</h2>
+<div class="course-table">
+<img src="code.png" alt="Code example">
+<div>
+<h4>Beginner</h4>
+<p><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy</a></p>
+<p><a href="https://www.codecademy.com/learn/make-a-website" target="_blank">Codecademy</a></p>
+<h4>Intermediate</h4>
+<p><a href="https://www.johnacademy.co.uk/course/computer-programming-intermediate-level/" target="_blank">John Academy</a></p>
+<p><a href="https://www.codecademy.com/learn/learn-intermediate-python-3" target="_blank">Codecademy</a></p>
+<h4>Advanced</h4>
+<p><a href="https://www.coursera.org/courses?query=coding&productDifficultyLevel=Advanced" target="_blank">Coursera</a></p>
+<p><a href="https://www.codecademy.com/learn/learn-advanced-python" target="_blank">Codecademy</a></p>
+</div>
+</div>
+</section>
+ 
+    <section class="apply-form" id="apply">
+<h2>Apply</h2>
+<form id="application-form">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Phone number" required>
+<br><br>
+<button type="submit">Apply</button>
+</form>
+</section>
+</div>
+ 
+  <div id="thank-you-message">Thank you for applying!</div>
+ 
+  <script>
+    document.getElementById("application-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent page refresh
+      document.getElementById("main-content").style.display = "none";
+      document.getElementById("thank-you-message").style.display = "block";
+    });
+</script>
+</body>
+</html>
